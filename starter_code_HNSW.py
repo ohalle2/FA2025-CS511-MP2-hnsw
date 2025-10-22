@@ -10,7 +10,6 @@ def evaluate_hnsw():
     # download data, build index, run query
 
     # write the indices of the 10 approximate nearest neighbours in output.txt, separated by new line in the same directory
-
     with h5py.File("sift-128-euclidean.hdf5", "r") as f:
         xb = f["train"][:]
         xq = f["test"][:]
